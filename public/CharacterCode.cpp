@@ -16,7 +16,6 @@ void FullToHalf(char* pStr)
 		{
 			// ASCII码中其它可显示字符
 			*pDest++	= (char)((unsigned char)(*(++pStr)) - 0x80);
-			continue;   
 		}
 		else if ((*pStr & 0xFF == 0xA1) && (*(pStr+1) & 0xFF) == 0xA1)
 		{
